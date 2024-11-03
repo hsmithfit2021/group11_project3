@@ -1,59 +1,22 @@
-import '../style/Preferences.css';
+import '../style/ArticleCard.css';
 
-function Preferences({fn}) {
-    const xButtonClick = () => {
-        fn(false);
-      }
+function ArticleCard() {
+    // Placeholder/Template, will need to be generated based on selected article
     return (
-        <div class="flex-center">
-            <form class = "preference-window">
-                <header>
-                    <button onClick={xButtonClick}>X</button>
-                    <p>
-                        Select news categories to fine-tune your feed.
-                    </p>
-                </header>
-                <label>
-                    <p>🧪</p>
-                    <input type="checkbox"/>
-                    Science
-                </label>
-                <label>
-                    <p>⚙️</p>
-                    <input type="checkbox"/>
-                    Technology
-                </label>
-                <label>
-                    <p>💊</p>
-                    <input type="checkbox"/>
-                    Health
-                </label>
-                <label>
-                    <p>🌎</p>
-                    <input type="checkbox"/>
-                    World
-                </label>
-                <label>
-                    <p>🍿</p>
-                    <input type="checkbox"/>
-                    Entertainment
-                </label>
-                <label>
-                    <p>🏆</p>
-                    <input type="checkbox"/>
-                    Sports
-                </label>
-                <label>
-                    <p>💵</p>
-                    <input type="checkbox"/>
-                    Business
-                </label>
-                <label>
-                    <p>🏳️</p>
-                    <input type="checkbox"/>
-                    Nation
-                </label>
-            </form>
+        <div class="proj-card">
+            <img />
+            <a>
+                link
+            </a>
+            <h4>
+                Title
+            </h4>
+            <p class = "date">
+                Date
+            </p>
+            <p class = "desc">
+                Description
+            </p>
         </div>
     );
   }

@@ -3,8 +3,10 @@ import '../style/App.css';
 import Search from './Search';
 import Navigation from './Navigation'
 import FullArticle from "./FullArticle";
+import ArticleCard from "./ArticleCard"
 
 function App() {
+
   return (
     <div class="App">
       <header class="App-header">
@@ -15,7 +17,7 @@ function App() {
       </header>
       <body class ="App-body">
         <Search />
-        <FullArticle />
+
       </body>
     </div>
   );

@@ -1,5 +1,6 @@
 import '../style/FullArticle.css';
 
+// Placeholder/Template, will need to be generated based on selected article
 function FullArticle() {
     return (
         <div class="article-page">
