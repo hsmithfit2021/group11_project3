@@ -1,0 +1,63 @@
+.flex-center {
+    position: fixed;
+    
+}
+
+.preference-window {
+    position: fixed;
+    background-color: #78808f;
+    border-radius: 1em;
+    width: 50%;
+    padding: 0.5em;
+}
+
+.preference-window header{
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 1rem;
+}
+.preference-window header button{
+    position: absolute;
+    right: 5%;
+}
+
+.preference-window label{
+    white-space: nowrap;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.5em;
+    padding-right: 1em;
+
+    background-color: #78808f;
+    border: solid 1px;
+    border-radius: 3em;
+    border-color: white;
+}
+
+
+
+.preference-window label p{
+    font-size: 2rem;
+    display: inline-block;
+    background-color: #282c34;
+    border-width: 0px;
+    border-radius: 100%;
+    
+    margin: 0.5rem;
+    padding:0.5rem;
+}
+
+.preference-window label:hover{
+    border-color: cyan;
+    color: cyan;
+}
+
+.preference-window label input:checked ~ .preference-window label p{
+    background-color: #57ff5f;
+}
+/*
+.preference-window label input{
+    display: none;
+}
+*/

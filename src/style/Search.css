@@ -1,0 +1,20 @@
+.select-reading-level {
+    width: 100%;
+  }
+  .select-reading-level select{
+    padding: 2em;
+    background-color: #78808f;
+    border-width: 0;
+    border-radius: 3em;
+    border-right: solid #78808f 2em;
+    color:white;
+    width: 80%;
+  }
+  .select-reading-level:after{
+    margin: 2em;
+    padding-right: 10em;
+  }
+  .select-reading-level select:after{
+    margin: 2em;
+    padding-right: 10em;
+  }

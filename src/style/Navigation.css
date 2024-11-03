@@ -1,0 +1,8 @@
+.pref-button {
+    width: 10%;
+  }
+  
+ .flex-right {
+    display:flex;
+    justify-content: flex-end;
+  }
