@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { UserProviderWrapper } from './User';
 import '../style/App.css';
 import Search from './Search';
 import Navigation from './Navigation'
@@ -8,18 +8,20 @@ import ArticleCard from "./ArticleCard"
 function App() {
 
   return (
-    <div class="App">
-      <header class="App-header">
-        <Navigation />
-        <h1>
-          LOGO
-        </h1>
-      </header>
-      <body class ="App-body">
-        <Search />
+    <UserProviderWrapper>
+      <div class="App">
+        <header class="App-header">
+          <Navigation />
+          <h1>
+            LOGO
+          </h1>
+        </header>
+        <body class ="App-body">
+          <Search />
 
-      </body>
-    </div>
+        </body>
+      </div>
+    </UserProviderWrapper>
   );
 }
 
