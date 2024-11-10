@@ -1,25 +1,31 @@
+// src/components/App.js
+
 import { UserProviderWrapper } from './User';
 import '../style/App.css';
 import Search from './Search';
 import Navigation from './Navigation';
-import FullArticle from "./FullArticle";
-import ArticleCard from "./ArticleCard";
+import FullArticle from './FullArticle';
+import ArticleCard from './ArticleCard';
+import { useState } from 'react';
 
 function App() {
+  const [filteredArticles, setFilteredArticles] = useState([]);
 
   return (
     <UserProviderWrapper>
-      <div class="App">
-        <header class="App-header">
+      <div className="App">
+        <header className="App-header">
           <Navigation />
-          <h1>
-            LOGO
-          </h1>
+          <h1>LOGO</h1>
         </header>
-        <body class ="App-body">
-          <Search />
-
-        </body>
+        <div className="App-body">
+          <Search setFilteredArticles={setFilteredArticles} />
+          <div className="articles-container">
+            {filteredArticles.map((article, index) => (
+              <ArticleCard key={index} article={article} />
+            ))}
+          </div>
+        </div>
       </div>
     </UserProviderWrapper>
   );
