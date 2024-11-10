@@ -14,7 +14,7 @@ function Navigation() {
               Preferences
             </button>
           </div>
-          {showPref && <Preferences fn = {setShowPref}/>}
+          <Preferences tf = {showPref} fn = {setShowPref}/>
         </div>
     );
 }

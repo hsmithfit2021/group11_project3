@@ -1,9 +1,9 @@
 import { UserProviderWrapper } from './User';
 import '../style/App.css';
 import Search from './Search';
-import Navigation from './Navigation'
+import Navigation from './Navigation';
 import FullArticle from "./FullArticle";
-import ArticleCard from "./ArticleCard"
+import ArticleCard from "./ArticleCard";
 
 function App() {
 

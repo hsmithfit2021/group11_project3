@@ -1,29 +1,34 @@
 import { useContext } from 'react';
+import { useEffect } from 'react';
 import UserContext from './User';
 import '../style/Preferences.css';
 
-function Preferences({ fn }) {
+function Preferences({tf, fn}) {
   const { currentPreferences, setCurrentPreferences } = useContext(UserContext);
 
-  function makeCategoryChange(category) {
+  function MakeCategoryChange(category) {
     let updatedCategories;
   
     if (!currentPreferences.categories.includes(category)) {
-      updatedCategories = currentPreferences.categories.slice();
+      updatedCategories = currentPreferences.categories;
       updatedCategories.push(category);
     } else {
       updatedCategories = currentPreferences.categories.filter(function(currentCategory) {
         return currentCategory !== category;
       });
     }
-  
+    
     setCurrentPreferences({ categories: updatedCategories });
+
   }
 
   const xButtonClick = () => {
     fn(false);
   };
 
+  if (!tf) {
+    return null;
+  }
   return (
     <div class="flex-center">
       <form class="preference-window">
@@ -36,7 +41,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Science')}
-            onChange={makeCategoryChange('Science')}
+            onChange={MakeCategoryChange('Science')}
           />
           Science
         </label>
@@ -45,7 +50,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Technology')}
-            onChange={makeCategoryChange('Technology')}
+            onChange={MakeCategoryChange('Technology')}
           />
           Technology
         </label>
@@ -54,7 +59,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Health')}
-            onChange={makeCategoryChange('Health')}
+            onChange={MakeCategoryChange('Health')}
           />
           Health
         </label>
@@ -63,7 +68,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('World')}
-            onChange={makeCategoryChange('World')}
+            onChange={MakeCategoryChange('World')}
           />
           World
         </label>
@@ -72,7 +77,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Entertainment')}
-            onChange={makeCategoryChange('Entertainment')}
+            onChange={MakeCategoryChange('Entertainment')}
           />
           Entertainment
         </label>
@@ -81,7 +86,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Sports')}
-            onChange={makeCategoryChange('Sports')}
+            onChange={MakeCategoryChange('Sports')}
           />
           Sports
         </label>
@@ -90,7 +95,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Business')}
-            onChange={makeCategoryChange('Business')}
+            onChange={MakeCategoryChange('Business')}
           />
           Business
         </label>
@@ -99,7 +104,7 @@ function Preferences({ fn }) {
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Nation')}
-            onChange={makeCategoryChange('Nation')}
+            onChange={MakeCategoryChange('Nation')}
           />
           Nation
         </label>
