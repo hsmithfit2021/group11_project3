@@ -3,9 +3,8 @@
     width: 10%;
     background-color: #78808f;
 
-    border: solid 1px;
+    border-width: 0;
     border-radius: 2em;
-    border-color: white;
     color: white;
   }
   .pref-button:hover {

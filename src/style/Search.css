@@ -1,7 +1,7 @@
-.select-reading-level {
+.search-container {
     width: 100%;
   }
-  .select-reading-level select{
+  .search-container select{
     padding: 2em;
     background-color: #78808f;
     border-width: 0;
@@ -10,11 +10,14 @@
     color:white;
     width: 80%;
   }
-  .select-reading-level:after{
+  .search-container:after{
     margin: 2em;
     padding-right: 10em;
   }
-  .select-reading-level select:after{
+  .search-container select:after{
     margin: 2em;
     padding-right: 10em;
+  }
+  .search-container:focus {
+    outline-color: #00ff9c;
   }

@@ -18,7 +18,7 @@ function Preferences({tf, fn}) {
       });
     }
     
-    setCurrentPreferences({ categories: updatedCategories });
+    //setCurrentPreferences({ categories: updatedCategories });
 
   }
 

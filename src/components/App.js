@@ -1,5 +1,6 @@
 // src/components/App.js
 
+import logo from "../assets/Newslook.svg"
 import { UserProviderWrapper } from './User';
 import '../style/App.css';
 import Search from './Search';
@@ -16,7 +17,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Navigation />
-          <h1>LOGO</h1>
+          <div class= "logo">
+            <img src={logo} />
+          </div>
         </header>
         <div className="App-body">
           <Search setFilteredArticles={setFilteredArticles} />

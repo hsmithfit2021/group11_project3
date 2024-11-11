@@ -6,7 +6,7 @@ function ArticleCard({ article }) {
   // Use the article prop to display article data
   return (
     <div className="proj-card">
-      <img src={article.card_image} alt={article.title} />
+      <img src={article.large_image_url} alt={article.title} />
       <a href={article.url}>{article.domain}</a>
       <h4>{article.title}</h4>
       <p className="date">{formatDate(article.published_date)}</p>

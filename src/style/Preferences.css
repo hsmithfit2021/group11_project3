@@ -1,6 +1,5 @@
 .flex-center {
-    position: fixed;
-    
+    width:100%;
 }
 
 .preference-window {
@@ -8,6 +7,10 @@
     background-color: #78808f;
     border-radius: 1em;
     width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0.5em;
 }
 
@@ -19,7 +22,14 @@
 }
 .preference-window header button{
     position: absolute;
-    right: 5%;
+    right: 4%;
+    font-size: 1.5rem;
+    color: #4b525e;
+    background-color: #78808f;
+    border-width: 0;
+}
+.preference-window header button:hover{
+    color: #a4aab6;
 }
 
 .preference-window label{
@@ -49,15 +59,9 @@
 }
 
 .preference-window label:hover{
-    border-color: cyan;
-    color: cyan;
+    background-color: #a4aab6;
 }
 
 .preference-window label input:checked ~ .preference-window label p{
     background-color: #57ff5f;
 }
-/*
-.preference-window label input{
-    display: none;
-}
-*/
