@@ -1,8 +1,9 @@
 // src/components/Search.js
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import '../style/Search.css';
 import articlesData from '../data/news_articles.json';
+import UserContext from './User';
 
 // Utility functions for readability calculations
 function countWords(text) {
@@ -42,12 +43,13 @@ function classifyArticleReadability(fleschIndex) {
 
 function Search({ setFilteredArticles }) {
   const [readingLevel, setReadingLevel] = useState('');
+  const { currentPreferences } = useContext(UserContext);
 
   useEffect(() => {
     // Initially display all articles or handle as needed
     filterArticles(readingLevel);
     // eslint-disable-next-line
-  }, []);
+  }, [readingLevel, currentPreferences]);
 
   const handleLevelChange = (event) => {
     const level = event.target.value;
@@ -71,7 +73,15 @@ function Search({ setFilteredArticles }) {
       );
       const readability = classifyArticleReadability(fleschIndex);
 
-      return readability === level;
+      let fitsCategory;
+
+      if (currentPreferences.categories.length > 0) {
+        fitsCategory = currentPreferences.categories.includes(article.topic);
+      } else {
+        fitsCategory = true;
+      }
+
+      return readability === level && fitsCategory;
     });
     setFilteredArticles(result);
   };
