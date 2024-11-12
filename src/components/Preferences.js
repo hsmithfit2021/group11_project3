@@ -18,7 +18,7 @@ function Preferences({tf, fn}) {
       });
     }
     
-    //setCurrentPreferences({ categories: updatedCategories });
+    setCurrentPreferences({ categories: updatedCategories });
 
   }
 
@@ -37,74 +37,74 @@ function Preferences({tf, fn}) {
           <p>Select news categories to fine-tune your feed.</p>
         </header>
         <label>
-          <p>🧪</p>
+          <p>{currentPreferences.categories.includes('Science') ? "✅": "🧪"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Science')}
-            onChange={MakeCategoryChange('Science')}
+            onClick={() => MakeCategoryChange('Science')}
           />
           Science
         </label>
         <label>
-          <p>⚙️</p>
+          <p>{currentPreferences.categories.includes('Technology') ? "✅": "⚙️"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Technology')}
-            onChange={MakeCategoryChange('Technology')}
+            onClick={() => MakeCategoryChange('Technology')}
           />
           Technology
         </label>
         <label>
-          <p>💊</p>
+          <p>{currentPreferences.categories.includes('Health') ? "✅": "💊"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Health')}
-            onChange={MakeCategoryChange('Health')}
+            onClick={() => MakeCategoryChange('Health')}
           />
           Health
         </label>
         <label>
-          <p>🌎</p>
+          <p>{currentPreferences.categories.includes('World') ? "✅": "🌎"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('World')}
-            onChange={MakeCategoryChange('World')}
+            onClick={() => MakeCategoryChange('World')}
           />
           World
         </label>
         <label>
-          <p>🍿</p>
+          <p>{currentPreferences.categories.includes('Entertainment') ? "✅": "🍿"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Entertainment')}
-            onChange={MakeCategoryChange('Entertainment')}
+            onClick={() => MakeCategoryChange('Entertainment')}
           />
           Entertainment
         </label>
         <label>
-          <p>🏆</p>
+          <p>{currentPreferences.categories.includes('Sports') ? "✅": "🏆"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Sports')}
-            onChange={MakeCategoryChange('Sports')}
+            onClick={() => MakeCategoryChange('Sports')}
           />
           Sports
         </label>
         <label>
-          <p>💵</p>
+          <p>{currentPreferences.categories.includes('Business') ? "✅": "💵"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Business')}
-            onChange={MakeCategoryChange('Business')}
+            onClick={() => MakeCategoryChange('Business')}
           />
           Business
         </label>
         <label>
-          <p>🏳️</p>
+          <p>{currentPreferences.categories.includes('Nation') ? "✅": "🏳️"}</p>
           <input
             type="checkbox"
             checked={currentPreferences.categories.includes('Nation')}
-            onChange={MakeCategoryChange('Nation')}
+            onClick={() => MakeCategoryChange('Nation')}
           />
           Nation
         </label>

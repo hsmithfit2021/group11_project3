@@ -58,6 +58,10 @@
     padding:0.5rem;
 }
 
+.preference-window label input{
+    display:none;
+}
+
 .preference-window label:hover{
     background-color: #a4aab6;
 }
