@@ -1,11 +1,18 @@
 // src/components/ArticleCard.js
 
 import '../style/ArticleCard.css';
+import {useState} from "react";
+import FullArticle from './FullArticle';
 
-function ArticleCard({ article }) {
+function ArticleCard({ article, onClick }) {
+  /*const showFull = useState(false);
+  const cardClick = () => {
+    setShowFull(!showFull)
+  }*/
+  
   // Use the article prop to display article data
   return (
-    <div className="proj-card">
+    <div className="proj-card" /*onClick={onClick}*/ onClick = {() => onClick(article)}>
       <img src={article.large_image_url} alt={article.title} />
       <a href={article.url}>{article.domain}</a>
       <h4>{article.title}</h4>
