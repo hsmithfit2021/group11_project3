@@ -1,9 +1,67 @@
 .article-page{
+    text-align: center;
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+
     background-color: #282c34;
     font-size: calc(10px + 2vmin);
     color: white;
     padding: 1rem;
-    /*width:50%*/
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+
+}
+
+.article-page h2 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 2em);
+}
+
+.article-page .image {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 2em);
+}
+.article-page .image img {
+    max-width:100%;
+}
+
+.article-page .link {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 2em);
+}
+
+.article-page .link a {
+    margin: 0;
+    font-size: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.article-page .topic {
+    margin: 0;
+    font-size: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 2em);
+}
+
+.article-page .date {
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 1em);
+}
+
+.article-page .date p {
+    font-size: 0.5em;
 }
 .article-page table {
     text-align: center;
@@ -16,6 +74,7 @@
 .article-page table td {
     padding: 0;
     margin: 0;
+    font-size: 0.5em;
 }
 .article-page table tr:nth-child(odd) {
     background-color: #737b8a;
@@ -57,6 +116,7 @@
     color: #a4aab6;
 }
 .preformat {
+    margin: 0;
     background-color: #282c34;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -64,6 +124,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     white-space: pre-wrap;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
+}
+@media (max-width:768px) {
+    .article-page {
+        width:100%;
+    }
 }

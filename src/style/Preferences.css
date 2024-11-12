@@ -12,6 +12,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.5em;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .preference-window header{
@@ -68,4 +70,10 @@
 
 .preference-window label input:checked ~ .preference-window label p{
     background-color: #57ff5f;
+}
+
+@media (max-width:768px) {
+    .preference-window {
+        width: 80%;
+    }
 }

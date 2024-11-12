@@ -47,7 +47,11 @@ function App() {
     );
   } else {
     return (
-      <FullArticle article={fullArticleContent} onClose={fullClosed}/>
+      <UserProviderWrapper>
+        <div className="App">
+          <FullArticle article={fullArticleContent} onClose={fullClosed}/>
+        </div>
+      </UserProviderWrapper>
     )
   }
 }

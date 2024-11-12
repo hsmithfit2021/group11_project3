@@ -2,6 +2,7 @@
     width: 100%;
   }
   .search-container select{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 2em;
     background-color: #78808f;
     border-width: 0;
@@ -9,6 +10,11 @@
     border-right: solid #78808f 2em;
     color:white;
     width: 80%;
+  }
+  .search-container select:focus{
+    outline-color:#00ff9c;
+    outline-style:solid;
+    outline-width: 2px;
   }
   .search-container:after{
     margin: 2em;
@@ -21,3 +27,4 @@
   .search-container:focus {
     outline-color: #00ff9c;
   }
+  

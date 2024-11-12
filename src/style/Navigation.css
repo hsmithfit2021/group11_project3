@@ -1,6 +1,7 @@
 .pref-button {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1em;
-    width: 10%;
+    min-width: 10vw;
     background-color: #78808f;
 
     border-width: 0;

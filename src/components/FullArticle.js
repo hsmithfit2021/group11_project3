@@ -26,7 +26,7 @@ function FullArticle({article, onClose}) {
             </h2>
             <br/>
             <p class="date">
-                <p className="date">{formatDate(article.published_date)}</p>
+                <p className="date"><strong>{formatDate(article.published_date)}</strong></p>
             </p>
             <br/>
             <p class="topic">
