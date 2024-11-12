@@ -37,74 +37,74 @@ function Preferences({tf, fn}) {
           <p>Select news categories to fine-tune your feed.</p>
         </header>
         <label>
-          <p>{currentPreferences.categories.includes('Science') ? "✅": "🧪"}</p>
+          <p>{currentPreferences.categories.includes('SCIENCE') ? "✅": "🧪"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Science')}
-            onClick={() => MakeCategoryChange('Science')}
+            defaultChecked={currentPreferences.categories.includes('SCIENCE')}
+            onClick={() => MakeCategoryChange('SCIENCE')}
           />
           Science
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Technology') ? "✅": "⚙️"}</p>
+          <p>{currentPreferences.categories.includes('TECHNOLOGY') ? "✅": "⚙️"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Technology')}
-            onClick={() => MakeCategoryChange('Technology')}
+            defaultChecked={currentPreferences.categories.includes('TECHNOLOGY')}
+            onClick={() => MakeCategoryChange('TECHNOLOGY')}
           />
           Technology
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Health') ? "✅": "💊"}</p>
+          <p>{currentPreferences.categories.includes('HEALTH') ? "✅": "💊"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Health')}
-            onClick={() => MakeCategoryChange('Health')}
+            defaultChecked={currentPreferences.categories.includes('HEALTH')}
+            onClick={() => MakeCategoryChange('HEALTH')}
           />
           Health
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('World') ? "✅": "🌎"}</p>
+          <p>{currentPreferences.categories.includes('WORLD') ? "✅": "🌎"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('World')}
-            onClick={() => MakeCategoryChange('World')}
+            defaultChecked={currentPreferences.categories.includes('WORLD')}
+            onClick={() => MakeCategoryChange('WORLD')}
           />
           World
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Entertainment') ? "✅": "🍿"}</p>
+          <p>{currentPreferences.categories.includes('ENTERTAINMENT') ? "✅": "🍿"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Entertainment')}
-            onClick={() => MakeCategoryChange('Entertainment')}
+            defaultChecked={currentPreferences.categories.includes('ENTERTAINMENT')}
+            onClick={() => MakeCategoryChange('ENTERTAINMENT')}
           />
           Entertainment
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Sports') ? "✅": "🏆"}</p>
+          <p>{currentPreferences.categories.includes('SPORTS') ? "✅": "🏆"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Sports')}
-            onClick={() => MakeCategoryChange('Sports')}
+            defaultChecked={currentPreferences.categories.includes('SPORTS')}
+            onClick={() => MakeCategoryChange('SPORTS')}
           />
           Sports
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Business') ? "✅": "💵"}</p>
+          <p>{currentPreferences.categories.includes('BUSINESS') ? "✅": "💵"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Business')}
-            onClick={() => MakeCategoryChange('Business')}
+            defaultChecked={currentPreferences.categories.includes('BUSINESS')}
+            onClick={() => MakeCategoryChange('BUSINESS')}
           />
           Business
         </label>
         <label>
-          <p>{currentPreferences.categories.includes('Nation') ? "✅": "🏳️"}</p>
+          <p>{currentPreferences.categories.includes('NATION') ? "✅": "🏳️"}</p>
           <input
             type="checkbox"
-            checked={currentPreferences.categories.includes('Nation')}
-            onClick={() => MakeCategoryChange('Nation')}
+            defaultChecked={currentPreferences.categories.includes('NATION')}
+            onClick={() => MakeCategoryChange('NATION')}
           />
           Nation
         </label>
