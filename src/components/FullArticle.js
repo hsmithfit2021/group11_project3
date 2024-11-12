@@ -1,13 +1,8 @@
 import '../style/FullArticle.css';
 import logo from "../assets/Newslook.svg"
-import { countSentences, countWords, countSyllables } from '../utils/textUtils';
 
 // Placeholder/Template, will need to be generated based on selected article
 function FullArticle({article, onClose}) {
-    const sentenceCount = countSentences(article.content);
-    const wordCount = countWords(article.content);
-    const syllableCount = countSyllables(article.content);
-    
     return (
         <div class="article-page">
             <div class="exit">
