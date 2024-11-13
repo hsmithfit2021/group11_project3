@@ -1,3 +1,6 @@
+/*
+  Styles preferences button
+*/
 .pref-button {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1em;
@@ -7,12 +10,14 @@
     border-width: 0;
     border-radius: 2em;
     color: white;
-  }
-  .pref-button:hover {
-    background-color: #a4aab6;
-  }
-  
- .flex-right {
-    display:flex;
-    justify-content: flex-end;
-  }
+}
+.pref-button:hover {
+  background-color: #a4aab6;
+}
+/*
+  Justifies preferences to the right
+*/
+.flex-right {
+  display:flex;
+  justify-content: flex-end;
+}

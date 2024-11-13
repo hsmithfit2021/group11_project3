@@ -1,9 +1,15 @@
+/*
+  Style for the full app
+*/
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
 }
 
+/*
+  Style for the logo and navigation
+*/
 .App-header {
   display: flex;
   flex-direction: column;
@@ -12,11 +18,17 @@
   padding: 1rem;
 }
 
+/*
+  Style everything except the logo and navigation
+*/
 .App-body {
   font-size: calc(10px + 2vmin);
   padding: 1rem;
 }
 
+/*
+  Logo styling
+*/
 .logo {
   margin: 0;
   margin-top:2em;
@@ -26,11 +38,13 @@
   align-items: center;
   width:100%;
 }
-
 .logo img{
   width:50%;
 }
 
+/*
+  Style for the container which holds all the generated articles.
+*/
 .articles-container {
   margin-top:2em;
   display:flex;
@@ -38,6 +52,9 @@
   justify-content: center;
 }
 
+/*
+  Media query: Makes logo larger on mobile
+*/
 @media(max-width: 768px) {
   .logo img{
     width:80%!important;;

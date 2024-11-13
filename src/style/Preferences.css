@@ -1,7 +1,13 @@
+/*
+  Outside container which the preference window centers itself inside
+*/
 .flex-center {
     width:100%;
 }
 
+/*
+  The preference window is set at a fixed location in the center of the screen
+*/
 .preference-window {
     position: fixed;
     background-color: #78808f;
@@ -16,12 +22,18 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*
+  Contains the text line and the button
+*/
 .preference-window header{
     padding: 0;
     margin: 0;
     display: block;
     font-size: 1rem;
 }
+/*
+  X button styling
+*/
 .preference-window header button{
     position: absolute;
     right: 4%;
@@ -33,7 +45,9 @@
 .preference-window header button:hover{
     color: #a4aab6;
 }
-
+/*
+  Styles drop arrow
+*/
 .preference-window label{
     white-space: nowrap;
     font-size: 1rem;
@@ -46,9 +60,9 @@
     border-radius: 3em;
     border-color: white;
 }
-
-
-
+/*
+  Styles the emoji symbol
+*/
 .preference-window label p{
     font-size: 2rem;
     display: inline-block;
@@ -59,19 +73,23 @@
     margin: 0.5rem;
     padding:0.5rem;
 }
-
+/*
+  Hides the checkbox
+*/
 .preference-window label input{
     display:none;
 }
 
+/*
+  Highlights when hovered.
+*/
 .preference-window label:hover{
     background-color: #a4aab6;
 }
 
-.preference-window label input:checked ~ .preference-window label p{
-    background-color: #57ff5f;
-}
-
+/*
+  Media queries, resizes preferences tab to be wider on mobile.
+*/
 @media (max-width:768px) {
     .preference-window {
         width: 80%;
